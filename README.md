@@ -38,8 +38,8 @@ python3 -m http.server 8000
 ## Deploy to GitHub Pages
 
 1. Push this repo to GitHub (branch `main`).
-2. In the repo go to **Settings -> Pages -> Build and deployment -> Source** and choose **GitHub Actions**.
-3. The workflow in `.github/workflows/static.yml` publishes `index.html`, `app.js`, `batch.js` and `enhanced_styles.css` on every push to `main`.
+2. The workflow in `.github/workflows/static.yml` enables GitHub Pages and publishes `index.html`, `app.js`, `batch.js` and `enhanced_styles.css` on every push to `main`.
+3. If automatic enablement is blocked, go to **Settings -> Pages -> Build and deployment -> Source**, choose **GitHub Actions**, and rerun the workflow.
 
 Your site will be at `https://<username>.github.io/<repo>/`.
 
